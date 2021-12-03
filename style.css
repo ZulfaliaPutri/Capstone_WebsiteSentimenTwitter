@@ -39,7 +39,6 @@ header {
     top: 0;
     background: #FFFFFF;
     z-index: 1;
-    border-bottom:1px solid #364f6b;
 }
 
 header ul {
@@ -65,4 +64,23 @@ header ul li a {
 .active {
 	background-color: #148F77;
 	color: #fff;
+}
+
+.logo{
+    height:60vh;
+    background-image: url(../img/Tengah.jpg);
+    background-size: cover;
+	position: relative;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo:after{
+	display: block;
+	position: absolute;
+}
+
+section{
+	padding: 50px 0;
 }
