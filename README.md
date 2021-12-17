@@ -11,6 +11,9 @@
   4. File dataset_clean.csv berisi dataset yang sudah dibersihkan pada program data_cleaning.ipynb.
   5. File readme.md berisi penjelasan terhadap proyek yang dikerjakan.
 
+## Domain Proyek
+<p align=justify>Pada proyek ini mengambil permasalahan tentang analisis sentimen. Analisis sentimen adalah salah satu metode untuk menentukan serta menganalisis apakah sentimen seseorang masuk ke dalam kategori yang dianalisis atau tidak. Pada umumnya analisis dibagi menjadi positif dan negatif. Topik yang diambil yaitu analisis sentimen cuitan pada twitter. Seperti yang diketahui, ujaran kebencian dan kata-kata kasar dapat ditemukan dalam beberapa cuitan pengguna twitter, yang mana hal ini bisa saja menimbulkan perpecahan di masyarakat dan berdampak buruk bagi psikologis korban. Hal tersebut juga termasuk salah satu bentuk cyberbullying, sehingga perlu untuk diatasi. Salah satu caranya yaitu dengan membuat proyek yang bertujuan untuk mengekstrak serta menganalisis tweet, apakah termasuk ke dalam kategori ujaran kebencian dan kata-kata kasar atau tidak.</p>
+
 ## Data Understanding
 <p align=justify>Dataset yang diambil berasal dari kaggle. Dataset berisi teks cuitan-cuitan pada twitter yang mengandung ujaran kebencian (hatespeech), kata-kata kasar (abusive), dan netral. Dataset terdiri dari 13 kolom yaitu 1 kolom untuk data tweet dan 12 kolom untuk data label. Untuk keterangan pada masing-masing kolom yaitu sebagai berikut :</p>
 
@@ -47,3 +50,17 @@ Pada tahap data preparation ini melakukan beberapa tahapan agar data dapat denga
   
 - Train Test Split
   <p align=justify>Proses selanjutnya pada data preparation yaitu train test split. Proses ini dilakukan dengan tujuan membagi data latih dan data uji sesuai dengan porsi yang diinginkan. Hal ini dilakukan agar nantinya tidak mengotori data uji dengan informasi yang kita dapat dari data latih karena data uji akan berperan sebagai data baru. Pada proyek ini train test split dibagi dengan rasio 80:20, dimana 80% dari keseluruhan data berperan sebagai data latih dan 20% sisanya berperan sebagai data uji.</p>
+
+## Modeling
+<p align=justify>Untuk menyelesaikan permasalahan yang sudah dijelaskan di atas, pada proyek ini menggunakan algoritma Random Forest Classifier. Algoritma random forest classifier adalah meta estimator yang cocok dengan sejumlah decision tree classifiers pada berbagai sub-sampel dari dataset dan menggunakan rata-rata untuk meningkatkan akurasi prediksi dan mengontrol overfitting.</p>
+
+Hasil akurasi yang didapatkan yaitu 0.8625, dengan tabel confusion matrix sebagai berikut :
+
+ CF| Positive | Negative
+------------ | ------------- | -------------
+Positive | 1003 | 197
+Negative | 165 | 1268
+
+## ***Referensi***
+- Dokumentasi Scikit-learn : https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+- Metode Random Forest : https://medium.com/@haataa/nlp-pipeline-101-with-basic-code-example-modeling-40c75d963984
