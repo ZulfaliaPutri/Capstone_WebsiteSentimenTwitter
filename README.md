@@ -2,6 +2,15 @@
 
 ## Project Capstone Dicoding 2021
 
+## About File
+<p align=justify>Pada repository ini terdapat 5 file yaitu binary_label_with_sklearn_classification.ipynb, data_cleaning.ipynb, data.csv, dataset_clean.csv, dan readme.md. Untuk penjelasan masing-masing file yaitu sebagai berikut :</p>
+
+  1. File binary_label_with_sklearn_classification.ipynb berisi code program metode atau model yang digunakan dalam proyek capstone.
+  2. File data_cleaning.ipynb berisi code program yang digunakan untuk proses pembersihan data atau pemrosesan data. Pada akhir program terdapat code untuk menyimpan dataset yang sudah dibersihkan.
+  3. File data.csv berisi dataset awal atau original yang belum dilakukan proses apa pun.
+  4. File dataset_clean.csv berisi dataset yang sudah dibersihkan pada program data_cleaning.ipynb.
+  5. File readme.md berisi penjelasan terhadap proyek yang dikerjakan.
+
 ## Data Understanding
 <p align=justify>Dataset yang diambil berasal dari kaggle. Dataset berisi teks cuitan-cuitan pada twitter yang mengandung ujaran kebencian (hatespeech), kata-kata kasar (abusive), dan netral. Dataset terdiri dari 13 kolom yaitu 1 kolom untuk data tweet dan 12 kolom untuk data label. Untuk keterangan pada masing-masing kolom yaitu sebagai berikut :</p>
 
@@ -34,4 +43,7 @@ Pada tahap data preparation ini melakukan beberapa tahapan agar data dapat denga
   * Stemming : mengganti kata-kata yang berimbuhan menjadi kata dasar
   
 - Memilih Fitur
+  <p align=justify>Pada dataset terdapat 12 kolom label, tetapi pada proyek ini tidak dipakai keseluruhannya. Sehingga dilakukan pemilihan fitur yang ada pada dataset. Fitur yang diambil yaitu tweet, label HS dan label Abusive. Selanjutnya pada label HS dan label Abusive dilakukan penggabungan nilai dengan operator OR, sehingga dataset final terdiri dari 2 kolom yaitu kolom tweet serta kolom label hatespeech dan abusive.</p>
+  
 - Train Test Split
+  <p align=justify>Proses selanjutnya pada data preparation yaitu train test split. Proses ini dilakukan dengan tujuan membagi data latih dan data uji sesuai dengan porsi yang diinginkan. Hal ini dilakukan agar nantinya tidak mengotori data uji dengan informasi yang kita dapat dari data latih karena data uji akan berperan sebagai data baru. Pada proyek ini train test split dibagi dengan rasio 80:20, dimana 80% dari keseluruhan data berperan sebagai data latih dan 20% sisanya berperan sebagai data uji.</p>
