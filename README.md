@@ -20,3 +20,18 @@
   13. HS_Strong : label untuk ujaran kebencian (hate speech) yang bernilai kuat dengan nilai 0 atau 1.
 
 [Link download dataset](https://www.kaggle.com/ilhamfp31/indonesian-abusive-and-hate-speech-twitter-text "Dataset Kaggle")
+
+## Data Preparation
+Pada tahap data preparation ini melakukan beberapa tahapan agar data dapat dengan baik diimplementasikan ke dalam model, tahapan tersebut yaitu sebagai berikut :
+- Preprocessing Data
+  <p align=justify>Preprocessing adalah tahapan yang penting untuk dilakukan jika mengolah data, terlebih apabila data yang diolah adalah data teks. Data cuitan twitter yang disediakan adalah data apa adanya dari twitter yang masih belum diolah sama sekali. Sehingga perlu dilakukan preprocessing terhadap data tersebut agar ketika dimasukkan ke dalam model nantinya memiliki kualitas yang bagus. Beberapa proses yang dilakukan pada tahap preprocessing yaitu :</p>
+  
+  * Lowercase : mengubah seluruh karakter menjadi huruf kecil
+  * Menghapus karakter yang tidak perlu
+  * Menghapus karakter yang bukan alfabet dan numerik
+  * Normalisasi kata : mengganti kata yang tidak baku, bahasa-bahasa gaul, serta singkatan menjadi kata-kata yang baku
+  * Menghapus stopwords : menghapus kata-kata yang sering muncul tetapi tidak bermakna
+  * Stemming : mengganti kata-kata yang berimbuhan menjadi kata dasar
+  
+- Memilih Fitur
+- Train Test Split
