@@ -1,6 +1,4 @@
-# We Can No Hate - Capstone - Machine Learning
-
-## Project Capstone Dicoding 2021
+# We Can No Hate - Machine Learning
 
 ## About File
 <p align=justify>Pada repository ini terdapat 5 file yaitu binary_label_with_sklearn_classification.ipynb, data_cleaning.ipynb, data.csv, dataset_clean.csv, dan readme.md. Untuk penjelasan masing-masing file yaitu sebagai berikut :</p>
